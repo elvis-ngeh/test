@@ -1,7 +1,9 @@
 name: shell commands 
 
 on:
-  - push
+  push:
+    branches:
+      - 'main'
 
 jobs:
     run-shell-commands:
