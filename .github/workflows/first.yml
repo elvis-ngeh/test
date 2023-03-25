@@ -7,7 +7,6 @@ env:
    ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
    AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
-
 jobs:
   terraform-workflow:
     runs-on: ubuntu-latest
@@ -22,9 +21,5 @@ jobs:
         run: terraform init   
       - name: Terraform validate
         run: terraform validate
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-region: us-east-1 
       - name: Terraform plan
         run: terraform plan  
