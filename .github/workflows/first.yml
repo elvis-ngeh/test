@@ -3,9 +3,9 @@ name: shell commands
 on:
   - push
 
-env:
-   ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
-   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#env:
+#   ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
+#   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
 jobs:
   terraform-workflow:
